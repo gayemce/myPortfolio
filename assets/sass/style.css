@@ -1,13 +1,14 @@
-/* ------------  GOOGLE FONTS  ------------ */
+/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap");
-/* --- VARIABLES CSS --- */
-/* --- Colors  ---*/
+/*=============== VARIABLES CSS ===============*/
+/*========== Colors ==========*/
 /*Color mode HSL(hue, saturation, lightness)*/
-/* --- Font and typography ---*/
-/* --- Font weight ---*/
-/* --- z index ---*/
-/* --- Responsive typography ---*/
-/* --- Base ---*/
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+/*========== Font weight ==========*/
+/*========== z index ==========*/
+/*========== Responsive typography ==========*/
+/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,14 +21,14 @@ html {
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
-  font-size: var(0.938rem);
-  background-color: var(hsl(0, 0%, 44%));
-  color: var(hsl(0, 0%, 17%));
+  font-size: 0.938rem;
+  background-color: hsl(0, 0%, 87%);
+  color: hsl(0, 0%, 35%);
 }
 
 h1, h2, h3, h4 {
-  color: var(hsl(0, 0%, 0%));
-  font-weight: var(700);
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
 }
 
 ul {
@@ -44,10 +45,13 @@ img {
   height: auto;
 }
 
-/* --- THEME ---*/
-/* --- Variables Dark theme ---*/
-/* Color changes in some parts of the website, in dark theme */
-/* --- Resuable css classes ---*/
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+/*========== 
+	Color changes in some parts of 
+	the website, in dark theme
+==========*/
+/*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -97,7 +101,7 @@ img {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: var(hsl(25, 23%, 26%));
+  background-color: var(hsl(14, 98%, 50%));
   rotate: -30deg;
 }
 
@@ -112,28 +116,71 @@ img {
 }
 
 .main {
-  overflow: hidden;
+  overflow: hidden; /* For animation ScrollReveal */
 }
 
-/* --- HEADER & NAV  ---*/
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: hsl(0, 0%, 87%);
+  z-index: 100;
+  transition: box-shadow 0.4s;
+}
+.header .nav {
+  position: relative;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav .nav_logo {
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  align-items: center;
+  font-weight: 600;
+  color: hsl(0, 0%, 0%);
+}
+.header .nav .nav_logo .nav_logo-circle {
+  border-radius: 50%;
+}
+
+.nav_logo-circle,
+.nav_toggle {
+  width: 32px;
+  height: 32px;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 95%);
+  display: grid;
+  place-items: center;
+}
+
+.nav_toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
 /* Navigation for mobile devices */
 /* Show menu */
 /* Add shadow header */
 /* Active link */
-/* --- HOME  ---*/
+/*=============== HOME ===============*/
 /* Animate scroll icon */
-/* --- BUTTON  ---*/
-/* --- ABOUT  ---*/
-/* --- SERVICES  ---*/
-/* --- PROJECTS  ---*/
-/* --- CONTACT  ---*/
+/*=============== BUTTON ===============*/
+/*=============== ABOUT ===============*/
+/*=============== SERVICES ===============*/
+/*=============== PROJECTS ===============*/
+/*=============== CONTACT ===============*/
 /* Opaque placeholder */
 /* Move label up & sticky label */
-/* --- FOOTER  ---*/
-/* --- SCROLL BAR  ---*/
-/* --- SCROLL UP  ---*/
+/*=============== FOOTER ===============*/
+/*=============== SCROLL BAR ===============*/
+/*=============== SCROLL UP ===============*/
 /* Show Scroll Up */
-/* --- BREAKPOINTS  ---*/
+/*=============== BREAKPOINTS ===============*/
 /* For small devices */
 /* For medium devices */
 /* For large devices *//*# sourceMappingURL=style.css.map */
