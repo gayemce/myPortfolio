@@ -289,8 +289,89 @@ img {
   left: 40%;
   bottom: -4rem;
 }
+.home_container .home_profil .home_image .home_line {
+  right: -2rem;
+  bottom: -0.5rem;
+}
+.home_container .home_profil .home_image .geometric-box {
+  top: 2.5rem;
+  left: -0.7rem;
+  z-index: 10;
+}
+.home_container .home_profil .home_social {
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  left: -3rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  display: grid;
+  row-gap: 1rem;
+}
+.home_container .home_profil .home_social .home_social-link {
+  background-color: hsl(0, 0%, 40%);
+  color: hsl(0, 0%, 95%);
+  font-size: 1.25rem;
+  padding: 6px;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.3s;
+}
+.home_container .home_profil .home_social .home_social-link:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+.home_container .home_info {
+  margin-top: 4rem;
+}
+.home_container .home_info .home_description {
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+  margin-bottom: 1.5rem;
+}
+.home_container .home_info .home_description b {
+  background: linear-gradient(90deg, hsla(14, 98%, 50%, 0.3), hsla(14, 98%, 50%, 0));
+}
+.home_container .home_info .home_scroll {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+.home_container .home_info .home_scroll .home_scroll-box {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 95%);
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.4s;
+}
+.home_container .home_info .home_scroll .home_scroll-box i {
+  animation: scroll-down 3s infinite;
+}
+.home_container .home_info .home_scroll .home_scroll-text {
+  display: none;
+}
 
 /* Animate scroll icon */
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0.6rem);
+    opacity: 0;
+  }
+}
 /* --- BUTTON --- */
 /* --- ABOUT --- */
 /* --- SERVICES --- */
