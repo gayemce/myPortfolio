@@ -247,6 +247,10 @@ img {
 }
 
 /* Add shadow header */
+.shadow-header {
+  box-shadow: 0 1px 16px hsla(0, 0%, 0%, 0.12);
+}
+
 /* Active link */
 /* --- HOME --- */
 .home_container {
