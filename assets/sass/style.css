@@ -66,8 +66,8 @@ img {
   padding-block: 4rem 2rem;
 }
 
-.section__title-1,
-.section__title-2 {
+.section_title-1,
+.section_title-2 {
   position: relative;
   font-size: 1.75rem;
   width: -moz-max-content;
@@ -75,14 +75,14 @@ img {
   margin: 0.75rem auto 2rem;
 }
 
-.section__title-1 span,
-.section__title-2 span {
+.section_title-1 span,
+.section_title-2 span {
   z-index: 5;
   position: relative;
 }
 
-.section__title-1::after,
-.section__title-2::after {
+.section_title-1::after,
+.section_title-2::after {
   content: "";
   width: 40px;
   height: 28px;
@@ -92,7 +92,7 @@ img {
   right: -8px;
 }
 
-.section__title-2::after {
+.section_title-2::after {
   top: initial;
   bottom: -4px;
 }
