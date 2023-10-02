@@ -26,7 +26,10 @@ body {
   color: hsl(0, 0%, 35%);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: hsl(0, 0%, 0%);
   font-weight: 700;
 }
@@ -115,7 +118,8 @@ img {
 }
 
 .main {
-  overflow: hidden; /* For animation ScrollReveal */
+  overflow: hidden;
+  /* For animation ScrollReveal */
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -376,7 +380,6 @@ img {
     opacity: 0;
   }
 }
-/* --- BUTTON --- */
 /* --- ABOUT --- */
 .about {
   background-color: var(--container-color);
@@ -387,6 +390,40 @@ img {
 }
 .about .about_container .about_info {
   padding-left: 1.25rem;
+  /* --- BUTTON --- */
+}
+.about .about_container .about_info .about_buttons .button,
+.about .about_container .about_info .about_buttons .button_ghost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.about .about_container .about_info .about_buttons .button {
+  background-color: hsl(0, 0%, 0%);
+  padding: 1.1rem 1.5rem;
+  color: hsl(0, 0%, 95%);
+  font-weight: 500;
+  transition: background-color 0.4s;
+}
+.about .about_container .about_info .about_buttons .button i {
+  font-size: 1.25rem;
+}
+.about .about_container .about_info .about_buttons .button:hover {
+  background-color: hsl(14, 98%, 50%);
+}
+.about .about_container .about_info .about_buttons .button_ghost {
+  border: 3px solid hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 0%);
+  padding: 0.5rem;
+  transition: border 0.4s, color 0.4s;
+}
+.about .about_container .about_info .about_buttons .button_ghost i {
+  font-size: 1.25rem;
+}
+.about .about_container .about_info .about_buttons .button_ghost:hover {
+  border: 3px solid hsl(14, 98%, 50%);
 }
 .about .about_container .about_info .about_description {
   position: relative;
