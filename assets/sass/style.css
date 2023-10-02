@@ -498,6 +498,34 @@ img {
 }
 
 /* --- SERVICES --- */
+.services_container {
+  grid-template-columns: 250px;
+  justify-content: center;
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+.services_container .services_card {
+  position: relative;
+}
+.services_container .services_card .services_content {
+  height: 100%;
+  background-color: hsl(0, 0%, 87%);
+  border: 4px solid hsl(0, 0%, 0%);
+  padding: 6rem 1rem 3rem;
+  z-index: 5;
+  position: relative;
+  transition: background-color 0.4s, border 0.4s;
+}
+.services_container .services_card .services_border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid hsl(14, 98%, 50%);
+  top: 0;
+  left: 0;
+  transition: transform 0.4s;
+}
+
 /* --- PROJECTS --- */
 /* --- CONTACT --- */
 /* Opaque placeholder */
