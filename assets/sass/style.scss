@@ -720,7 +720,10 @@ img {
     .projects_card{
       padding: 1rem 1rem 2rem;
       transition: background-color .4s;
-      background-color: $white-color;
+      
+      &:hover{
+        background-color: $white-color;
+      }
 
       .projects_image{
         position: relative;
@@ -745,6 +748,47 @@ img {
           color: $text-color;
           margin-bottom: .75rem;
           padding-left: 1.75rem;
+
+          &::after{
+            content: '';
+            width: 20px;
+            height: 1px;
+            background-color: $text-color;
+            position: absolute;
+            top: 50%;
+            left: 0;
+          }
+        }
+
+        .projects_title{
+          font-size: $h3-font-size;
+          margin-bottom: .75rem;
+        }
+      }
+      
+      .projects_buttons{
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+
+        .projects_link{
+          display: flex;
+          align-items: center;
+          column-gap: .25rem;
+          color: $text-color;
+          font-size: $small-font-size;
+          font-weight: $font-medium;
+          transition: color .4s;
+
+          i{
+            font-size: 1rem;
+            color: $title-color;
+            transition: color .4s;
+          }
+
+          &:hover, &:hover i{
+            color: $first-color;
+          }
         }
       }
     }
