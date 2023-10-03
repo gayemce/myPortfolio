@@ -117,6 +117,43 @@ img {
   top: -5px;
 }
 
+/* --- BUTTON --- */
+.button,
+.button_ghost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.button {
+  background-color: hsl(0, 0%, 0%);
+  padding: 1.1rem 1.5rem;
+  color: hsl(0, 0%, 95%);
+  font-weight: 500;
+  transition: background-color 0.4s;
+}
+.button i {
+  font-size: 1.25rem;
+}
+.button:hover {
+  background-color: hsl(14, 98%, 50%);
+}
+
+.button_ghost {
+  border: 3px solid hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 0%);
+  padding: 0.5rem;
+  transition: border 0.4s, color 0.4s;
+}
+.button_ghost i {
+  font-size: 1.25rem;
+}
+.button_ghost:hover {
+  border: 3px solid hsl(14, 98%, 50%);
+}
+
 .main {
   overflow: hidden;
   /* For animation ScrollReveal */
@@ -552,6 +589,41 @@ img {
 }
 
 /* --- PROJECTS --- */
+.projects {
+  background-color: hsl(0, 0%, 83%);
+  transition: background-color 0.4s;
+}
+.projects .projects_container {
+  row-gap: 2rem;
+}
+.projects .projects_container .projects_card {
+  padding: 1rem 1rem 2rem;
+  transition: background-color 0.4s;
+  background-color: hsl(0, 0%, 95%);
+}
+.projects .projects_container .projects_card .projects_image {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+.projects .projects_container .projects_card .projects_image .projects_button {
+  position: absolute;
+  right: 1rem;
+  bottom: -1.5rem;
+  padding: 1rem;
+}
+.projects .projects_container .projects_card .projects_content {
+  margin-bottom: 1.25rem;
+}
+.projects .projects_container .projects_card .projects_content .projects_subtitle {
+  position: relative;
+  display: inline-block;
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 35%);
+  margin-bottom: 0.75rem;
+  padding-left: 1.75rem;
+}
+
 /* --- CONTACT --- */
 /* Opaque placeholder */
 /* Move label up & sticky label */

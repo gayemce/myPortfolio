@@ -166,7 +166,45 @@ img {
   }
 }
 
+/* --- BUTTON --- */
+.button,
+.button_ghost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .5rem;
+}
 
+.button {
+  background-color: $black-color;
+  padding: 1.1rem 1.5rem;
+  color: $white-color;
+  font-weight: $font-medium;
+  transition: background-color .4s;
+
+  i {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    background-color: $first-color;
+  }
+}
+
+.button_ghost {
+  border: 3px solid $black-color;
+  color: $black-color;
+  padding: .5rem;
+  transition: border .4s, color .4s;
+
+  i {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    border: 3px solid $first-color;
+  }
+}
 
 .main {
   overflow: hidden;
@@ -619,7 +657,7 @@ img {
   .services_card {
     position: relative;
 
-    &:hover .services_border{
+    &:hover .services_border {
       transform: translate(.75rem, .75rem);
     }
 
@@ -632,18 +670,18 @@ img {
       position: relative;
       transition: background-color .4s, border .4s;
 
-      .services_icon{
+      .services_icon {
         position: relative;
         display: inline-block;
 
-        i{
+        i {
           font-size: 2rem;
           color: $black-color;
           position: relative;
           z-index: 5;
         }
 
-        .services_box{
+        .services_box {
           position: absolute;
           width: 24px;
           height: 24px;
@@ -653,13 +691,13 @@ img {
         }
       }
 
-      .services_title{
+      .services_title {
         font-size: $h2-font-size;
         margin-bottom: 1.25rem;
       }
     }
 
-    .services_border{
+    .services_border {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -672,7 +710,46 @@ img {
 }
 
 /* --- PROJECTS --- */
+.projects{
+  background-color: $container-color;
+  transition: background-color .4s;
 
+  .projects_container{
+    row-gap: 2rem;
+    
+    .projects_card{
+      padding: 1rem 1rem 2rem;
+      transition: background-color .4s;
+      background-color: $white-color;
+
+      .projects_image{
+        position: relative;
+        margin-bottom: .75rem;
+
+        .projects_button{
+          position: absolute;
+          right: 1rem;
+          bottom: -1.5rem;
+          padding: 1rem;
+        }
+      }
+
+      .projects_content{
+        margin-bottom: 1.25rem;
+
+        .projects_subtitle{
+          position: relative;
+          display: inline-block;
+          font-size: $small-font-size;
+          font-weight: $font-medium;
+          color: $text-color;
+          margin-bottom: .75rem;
+          padding-left: 1.75rem;
+        }
+      }
+    }
+  }
+}
 
 /* --- CONTACT --- */
 
