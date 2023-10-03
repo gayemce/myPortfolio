@@ -619,6 +619,10 @@ img {
   .services_card {
     position: relative;
 
+    &:hover .services_border{
+      transform: translate(.75rem, .75rem);
+    }
+
     .services_content {
       height: 100%;
       background-color: $body-color;
@@ -627,6 +631,32 @@ img {
       z-index: 5;
       position: relative;
       transition: background-color .4s, border .4s;
+
+      .services_icon{
+        position: relative;
+        display: inline-block;
+
+        i{
+          font-size: 2rem;
+          color: $black-color;
+          position: relative;
+          z-index: 5;
+        }
+
+        .services_box{
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          background-color: $first-color;
+          right: -2px;
+          top: -2px;
+        }
+      }
+
+      .services_title{
+        font-size: $h2-font-size;
+        margin-bottom: 1.25rem;
+      }
     }
 
     .services_border{

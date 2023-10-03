@@ -507,6 +507,9 @@ img {
 .services_container .services_card {
   position: relative;
 }
+.services_container .services_card:hover .services_border {
+  transform: translate(0.75rem, 0.75rem);
+}
 .services_container .services_card .services_content {
   height: 100%;
   background-color: hsl(0, 0%, 87%);
@@ -515,6 +518,28 @@ img {
   z-index: 5;
   position: relative;
   transition: background-color 0.4s, border 0.4s;
+}
+.services_container .services_card .services_content .services_icon {
+  position: relative;
+  display: inline-block;
+}
+.services_container .services_card .services_content .services_icon i {
+  font-size: 2rem;
+  color: hsl(0, 0%, 0%);
+  position: relative;
+  z-index: 5;
+}
+.services_container .services_card .services_content .services_icon .services_box {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: hsl(14, 98%, 50%);
+  right: -2px;
+  top: -2px;
+}
+.services_container .services_card .services_content .services_title {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .services_container .services_card .services_border {
   position: absolute;
