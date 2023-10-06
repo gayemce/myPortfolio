@@ -941,6 +941,48 @@ img {
       padding-block: 1rem 2rem;
       text-align: center;
 
+      .contact_social-arrow{
+        width: 32px;
+        margin: 0 auto;
+      }
+
+      .contact_social-data{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+
+        .contact_social-description-1{
+          color: $text-color-light;
+          font-size: $small-font-size;
+          margin-bottom: .5rem;
+        }
+
+        .contact_social-description-2{
+          color: $white-color;
+          font-size: $small-font-size;
+          font-weight: $font-semi-bold;
+        }
+
+        .contact_social-links{
+          display: flex;
+          justify-content: center;
+          column-gap: .75rem;
+
+          .contact_social-link{
+            background-color: $black-color-light;
+            padding: 6px;
+            color: $white-color;
+            font-size: 1.25rem;
+            display: grid;
+            place-items: center;
+            transition: background-color .3s;
+
+            &:hover{
+              background-color: $first-color;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -795,6 +795,43 @@ img {
   padding-block: 1rem 2rem;
   text-align: center;
 }
+.contact .contact_container .contact_social .contact_social-arrow {
+  width: 32px;
+  margin: 0 auto;
+}
+.contact .contact_container .contact_social .contact_social-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.contact .contact_container .contact_social .contact_social-data .contact_social-description-1 {
+  color: hsl(0, 0%, 64%);
+  font-size: 0.813rem;
+  margin-bottom: 0.5rem;
+}
+.contact .contact_container .contact_social .contact_social-data .contact_social-description-2 {
+  color: hsl(0, 0%, 95%);
+  font-size: 0.813rem;
+  font-weight: 600;
+}
+.contact .contact_container .contact_social .contact_social-data .contact_social-links {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+.contact .contact_container .contact_social .contact_social-data .contact_social-links .contact_social-link {
+  background-color: hsl(0, 0%, 40%);
+  padding: 6px;
+  color: hsl(0, 0%, 95%);
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.3s;
+}
+.contact .contact_container .contact_social .contact_social-data .contact_social-links .contact_social-link:hover {
+  background-color: hsl(14, 98%, 50%);
+}
 
 /* Opaque placeholder */
 .contact_input:focus::-moz-placeholder {
