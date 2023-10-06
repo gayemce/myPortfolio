@@ -710,26 +710,26 @@ img {
 }
 
 /* --- PROJECTS --- */
-.projects{
+.projects {
   background-color: $container-color;
   transition: background-color .4s;
 
-  .projects_container{
+  .projects_container {
     row-gap: 2rem;
-    
-    .projects_card{
+
+    .projects_card {
       padding: 1rem 1rem 2rem;
       transition: background-color .4s;
-      
-      &:hover{
+
+      &:hover {
         background-color: $white-color;
       }
 
-      .projects_image{
+      .projects_image {
         position: relative;
         margin-bottom: .75rem;
 
-        .projects_button{
+        .projects_button {
           position: absolute;
           right: 1rem;
           bottom: -1.5rem;
@@ -737,10 +737,10 @@ img {
         }
       }
 
-      .projects_content{
+      .projects_content {
         margin-bottom: 1.25rem;
 
-        .projects_subtitle{
+        .projects_subtitle {
           position: relative;
           display: inline-block;
           font-size: $small-font-size;
@@ -749,7 +749,7 @@ img {
           margin-bottom: .75rem;
           padding-left: 1.75rem;
 
-          &::after{
+          &::after {
             content: '';
             width: 20px;
             height: 1px;
@@ -760,18 +760,18 @@ img {
           }
         }
 
-        .projects_title{
+        .projects_title {
           font-size: $h3-font-size;
           margin-bottom: .75rem;
         }
       }
-      
-      .projects_buttons{
+
+      .projects_buttons {
         display: flex;
         align-items: center;
         column-gap: 1rem;
 
-        .projects_link{
+        .projects_link {
           display: flex;
           align-items: center;
           column-gap: .25rem;
@@ -780,13 +780,14 @@ img {
           font-weight: $font-medium;
           transition: color .4s;
 
-          i{
+          i {
             font-size: 1rem;
             color: $title-color;
             transition: color .4s;
           }
 
-          &:hover, &:hover i{
+          &:hover,
+          &:hover i {
             color: $first-color;
           }
         }
@@ -796,12 +797,167 @@ img {
 }
 
 /* --- CONTACT --- */
+.contact {
+  padding-bottom: 0;
 
+  .contact_container {
+    position: relative;
+    grid-template-rows: 300px max-content max-content;
+    row-gap: 0;
+
+    .contact_data {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: $container-color;
+      padding: 3rem 1.5rem 3.5rem;
+      margin-left: auto;
+      border-bottom: 4px solid $first-color;
+      z-index: 5;
+      transition: background-color .4s;
+
+      .section_title-2 {
+        margin: 0 0 1.5rem;
+        transform: translateX(-3rem);
+      }
+
+      .contact_description-1 {
+        color: $title-color;
+        font-weight: $font-medium;
+        margin-bottom: 2rem;
+      }
+
+      .contact_description-2 {
+        color: $title-color;
+        font-size: $small-font-size;
+      }
+
+      .geometric_box {
+        top: 2rem;
+        right: 2.5rem;
+      }
+    }
+
+    .contact_mail {
+      position: relative;
+      background-color: $black-color;
+      padding: 5rem 1.5rem 2.5rem;
+      margin-top: -2.5rem;
+      transition: background-color .4s;
+
+      .contact_title {
+        color: $white-color;
+        font-size: $h2-font-size;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .contact_form {
+        position: relative;
+        display: grid;
+        row-gap: 1.25rem;
+
+        .contact_group {
+          display: grid;
+          row-gap: 1.25rem;
+        }
+
+        .contact_box {
+          position: relative;
+          width: 100%;
+          height: 58px;
+
+          .contact_input {
+            font-family: $body-font;
+            font-size: $normal-font-size;
+            outline: none;
+            border: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $black-color;
+            border: 3px solid $black-color-light;
+            color: $white-color;
+            padding: .5rem 1rem;
+            font-weight: $font-medium;
+            transition: border .4s, background-color .4s;
+
+            &::placeholder {
+              color: $text-color-light;
+              transition: opacity .4s;
+            }
+
+            &:focus {
+              border: 3px solid $white-color;
+            }
+
+            &:-webkit-autofill {
+              transition: background-color 6000s, color 6000s;
+            }
+          }
+
+          .contact_label {
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            color: $text-color-light;
+            font-size: $small-font-size;
+            font-weight: $font-medium;
+            background-color: $black-color;
+            padding: 8px;
+            pointer-events: none;
+            transition: top .4s, opacity .4s, background-color .4s;
+            opacity: 0;
+          }
+        }
+
+        .contact_button {
+          font-family: $body-font;
+          font-size: $normal-font-size;
+          outline: none;
+          border: none;
+        }
+
+        .contact_area {
+          height: 10rem;
+
+          textarea {
+            resize: none;
+            padding-top: 1rem;
+          }
+        }
+
+        .contact_button {
+          background-color: $first-color;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .contact_social{
+      display: grid;
+      row-gap: 1rem;
+      background-color: hsl(0, 0%, 10%);
+      padding-block: 1rem 2rem;
+      text-align: center;
+
+    }
+  }
+}
 
 /* Opaque placeholder */
-
+.contact_input:focus::placeholder {
+  opacity: 0;
+}
 
 /* Move label up & sticky label */
+.contact_input {
+  &:focus + .contact_label,
+  &:not(:placeholder-shown):not(:focus) + .contact_label {
+    opacity: 1;
+    top: -16px;
+  }
+}
 
 
 /* --- FOOTER --- */

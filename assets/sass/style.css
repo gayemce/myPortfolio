@@ -664,8 +664,156 @@ img {
 }
 
 /* --- CONTACT --- */
+.contact {
+  padding-bottom: 0;
+}
+.contact .contact_container {
+  position: relative;
+  grid-template-rows: 300px max-content max-content;
+  row-gap: 0;
+}
+.contact .contact_container .contact_data {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: hsl(0, 0%, 83%);
+  padding: 3rem 1.5rem 3.5rem;
+  margin-left: auto;
+  border-bottom: 4px solid hsl(14, 98%, 50%);
+  z-index: 5;
+  transition: background-color 0.4s;
+}
+.contact .contact_container .contact_data .section_title-2 {
+  margin: 0 0 1.5rem;
+  transform: translateX(-3rem);
+}
+.contact .contact_container .contact_data .contact_description-1 {
+  color: hsl(0, 0%, 0%);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.contact .contact_container .contact_data .contact_description-2 {
+  color: hsl(0, 0%, 0%);
+  font-size: 0.813rem;
+}
+.contact .contact_container .contact_data .geometric_box {
+  top: 2rem;
+  right: 2.5rem;
+}
+.contact .contact_container .contact_mail {
+  position: relative;
+  background-color: hsl(0, 0%, 0%);
+  padding: 5rem 1.5rem 2.5rem;
+  margin-top: -2.5rem;
+  transition: background-color 0.4s;
+}
+.contact .contact_container .contact_mail .contact_title {
+  color: hsl(0, 0%, 95%);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contact .contact_container .contact_mail .contact_form {
+  position: relative;
+  display: grid;
+  row-gap: 1.25rem;
+}
+.contact .contact_container .contact_mail .contact_form .contact_group {
+  display: grid;
+  row-gap: 1.25rem;
+}
+.contact .contact_container .contact_mail .contact_form .contact_box {
+  position: relative;
+  width: 100%;
+  height: 58px;
+}
+.contact .contact_container .contact_mail .contact_form .contact_box .contact_input {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 0.938rem;
+  outline: none;
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 0%);
+  border: 3px solid hsl(0, 0%, 40%);
+  color: hsl(0, 0%, 95%);
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: border 0.4s, background-color 0.4s;
+}
+.contact .contact_container .contact_mail .contact_form .contact_box .contact_input::-moz-placeholder {
+  color: hsl(0, 0%, 64%);
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+.contact .contact_container .contact_mail .contact_form .contact_box .contact_input::placeholder {
+  color: hsl(0, 0%, 64%);
+  transition: opacity 0.4s;
+}
+.contact .contact_container .contact_mail .contact_form .contact_box .contact_input:focus {
+  border: 3px solid hsl(0, 0%, 95%);
+}
+.contact .contact_container .contact_mail .contact_form .contact_box .contact_input:-webkit-autofill {
+  -webkit-transition: background-color 6000s, color 6000s;
+  transition: background-color 6000s, color 6000s;
+}
+.contact .contact_container .contact_mail .contact_form .contact_box .contact_label {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: hsl(0, 0%, 64%);
+  font-size: 0.813rem;
+  font-weight: 500;
+  background-color: hsl(0, 0%, 0%);
+  padding: 8px;
+  pointer-events: none;
+  transition: top 0.4s, opacity 0.4s, background-color 0.4s;
+  opacity: 0;
+}
+.contact .contact_container .contact_mail .contact_form .contact_button {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 0.938rem;
+  outline: none;
+  border: none;
+}
+.contact .contact_container .contact_mail .contact_form .contact_area {
+  height: 10rem;
+}
+.contact .contact_container .contact_mail .contact_form .contact_area textarea {
+  resize: none;
+  padding-top: 1rem;
+}
+.contact .contact_container .contact_mail .contact_form .contact_button {
+  background-color: hsl(14, 98%, 50%);
+  cursor: pointer;
+}
+.contact .contact_container .contact_social {
+  display: grid;
+  row-gap: 1rem;
+  background-color: hsl(0, 0%, 10%);
+  padding-block: 1rem 2rem;
+  text-align: center;
+}
+
 /* Opaque placeholder */
+.contact_input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.contact_input:focus::placeholder {
+  opacity: 0;
+}
+
 /* Move label up & sticky label */
+.contact_input:not(:-moz-placeholder-shown):not(:focus) + .contact_label {
+  opacity: 1;
+  top: -16px;
+}
+.contact_input:focus + .contact_label, .contact_input:not(:placeholder-shown):not(:focus) + .contact_label {
+  opacity: 1;
+  top: -16px;
+}
+
 /* --- FOOTER --- */
 /* --- SCROLL BAR --- */
 /* --- SCROLL UP --- */
