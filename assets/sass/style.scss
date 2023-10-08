@@ -931,6 +931,14 @@ img {
           background-color: $first-color;
           cursor: pointer;
         }
+
+        .contact_message{
+          color: $white-color;
+          font-size: $small-font-size;
+          position: absolute;
+          bottom: -1.6rem;
+          left: 0;
+        }
       }
     }
 

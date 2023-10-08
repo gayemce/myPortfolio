@@ -788,6 +788,13 @@ img {
   background-color: hsl(14, 98%, 50%);
   cursor: pointer;
 }
+.contact .contact_container .contact_mail .contact_form .contact_message {
+  color: hsl(0, 0%, 95%);
+  font-size: 0.813rem;
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}
 .contact .contact_container .contact_social {
   display: grid;
   row-gap: 1rem;
