@@ -932,7 +932,7 @@ img {
           cursor: pointer;
         }
 
-        .contact_message{
+        .contact_message {
           color: $white-color;
           font-size: $small-font-size;
           position: absolute;
@@ -942,41 +942,41 @@ img {
       }
     }
 
-    .contact_social{
+    .contact_social {
       display: grid;
       row-gap: 1rem;
       background-color: hsl(0, 0%, 10%);
       padding-block: 1rem 2rem;
       text-align: center;
 
-      .contact_social-arrow{
+      .contact_social-arrow {
         width: 32px;
         margin: 0 auto;
       }
 
-      .contact_social-data{
+      .contact_social-data {
         display: flex;
         flex-direction: column;
         row-gap: 1.5rem;
 
-        .contact_social-description-1{
+        .contact_social-description-1 {
           color: $text-color-light;
           font-size: $small-font-size;
           margin-bottom: .5rem;
         }
 
-        .contact_social-description-2{
+        .contact_social-description-2 {
           color: $white-color;
           font-size: $small-font-size;
           font-weight: $font-semi-bold;
         }
 
-        .contact_social-links{
+        .contact_social-links {
           display: flex;
           justify-content: center;
           column-gap: .75rem;
 
-          .contact_social-link{
+          .contact_social-link {
             background-color: $black-color-light;
             padding: 6px;
             color: $white-color;
@@ -985,7 +985,7 @@ img {
             place-items: center;
             transition: background-color .3s;
 
-            &:hover{
+            &:hover {
               background-color: $first-color;
             }
           }
@@ -1002,8 +1002,9 @@ img {
 
 /* Move label up & sticky label */
 .contact_input {
-  &:focus + .contact_label,
-  &:not(:placeholder-shown):not(:focus) + .contact_label {
+
+  &:focus+.contact_label,
+  &:not(:placeholder-shown):not(:focus)+.contact_label {
     opacity: 1;
     top: -16px;
   }
@@ -1011,16 +1012,40 @@ img {
 
 
 /* --- FOOTER --- */
+.footer {
+  background-color: $black-color;
 
+  .footer_container {
+    padding-block: 3rem 2rem;
+    row-gap: 2.5rem;
 
-/* --- SCROLL BAR --- */
+    .footer_links {
+      display: flex;
+      justify-content: center;
+      column-gap: 2rem;
 
+      .footer_link {
+        color: $white-color;
+        transition: color .4s;
 
-/* --- SCROLL UP --- */
+        &:hover {
+          color: $text-color;
+        }
+      }
+    }
 
+    .footer_copy {
+      color: $text-color-light;
+      font-size: $small-font-size;
+      text-align: center;
 
-/* Show Scroll Up */
-
+      a {
+        color: $white-color;
+        font-weight: $font-medium;
+      }
+    }
+  }
+}
 
 /* --- BREAKPOINTS --- */
 /* For small devices */
