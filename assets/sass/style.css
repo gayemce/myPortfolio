@@ -293,6 +293,13 @@ img {
 }
 
 /* Active link */
+.active-link {
+  color: hsl(0, 0%, 95%) !important;
+}
+.active-link::after {
+  width: 25% !important;
+}
+
 /* --- HOME --- */
 .home_container {
   padding-top: 2rem;

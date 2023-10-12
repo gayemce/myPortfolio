@@ -358,7 +358,13 @@ img {
 }
 
 /* Active link */
+.active-link{
+  color: $white-color !important;
 
+  &::after{
+    width: 25% !important;
+  }
+}
 
 /* --- HOME --- */
 .home_container {
