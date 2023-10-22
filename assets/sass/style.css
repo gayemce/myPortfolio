@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap");
-/*=============== VARIABLES CSS ===============*/
+/*=============== VARIABLES ===============*/
 /*========== Colors ==========*/
 /*Color mode HSL(hue, saturation, lightness)*/
 /*========== Font and typography ==========*/
@@ -24,6 +24,7 @@ body {
   font-size: 0.938rem;
   background-color: hsl(0, 0%, 87%);
   color: hsl(0, 0%, 35%);
+  transition: background-color 0.4s; /* For dark mode*/
 }
 
 h1,
@@ -49,11 +50,69 @@ img {
 }
 
 /*=============== THEME ===============*/
+.nav_buttons {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.nav_buttons .change-theme {
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 0%);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
 /*========== Variables Dark theme ==========*/
 /*========== 
 	Color changes in some parts of 
 	the website, in dark theme
 ==========*/
+.dark-theme .shadow-header {
+  box-shadow: 0 1px 12px hsla(0, 0%, 0%, 0.6);
+}
+
+.dark-theme .section_title-1::after,
+.dark-theme .section_title-2::after {
+  background-color: hsla(14, 70%, 50%, 0.2);
+}
+
+.dark-theme :is(.home_arrow, .home_line, .about_line) {
+  filter: none;
+}
+
+.dark-theme .home_description b {
+  background: linear-gradient(90deg, hsla(14, 80%, 50%, 0.3), hsla(14, 80%, 50%, 0));
+}
+
+.dark-theme :is(.button_ghost, .services_icon i) {
+  color: var(white-color);
+}
+
+.dark-theme .projects_card:hover {
+  background-color: hsl(0, 0%, 87%);
+}
+
+.dark-theme :is(.contact_mail, .contact_input, .contact_label) {
+  background-color: hsl(0, 0%, 83%);
+}
+
+.dark-theme .footer {
+  background-color: hsl(0, 0%, 4%);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(0, 0%, 20%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 30%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
@@ -167,7 +226,7 @@ img {
   left: 0;
   background-color: hsl(0, 0%, 87%);
   z-index: 100;
-  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s background-color 0.4s;
 }
 .header .nav {
   position: relative;
