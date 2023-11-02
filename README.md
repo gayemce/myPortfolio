@@ -18,5 +18,9 @@ Bu proje, aşağıdaki teknolojileri kullanmaktadır:
 Proje, özellikleri:
 
 - **Responsive Tasarım:** Site, farklı ekran boyutlarına mükemmel bir şekilde uyum sağlar.
-- **Dark ve Light Mod:** Site temasını özelleştirilebilir.
+- **Dark ve Light Mod:** Site teması özelleştirilebilir.
 - **İletişim Formu:** Email.js entegrasyonu sayesinde, hızlıca iletişim kurmak mümkün.
+
+---
+
+![Portfolio](Portfolio.png)
