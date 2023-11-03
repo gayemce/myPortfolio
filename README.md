@@ -1,6 +1,6 @@
 # Portfolyo Sitesi
 
-Bu GitHub deposu, kişisel portfolyo web sitesi içerir. Bu site ile, yeteneklerimi, projelerimi inceleyebilir, iletişim kısmından benimle iletişime geçebilirsiniz.
+Bu GitHub deposu, kişisel portfolyo web sitesi içerir. [Bu site](https://gayemce.github.io/GayeTekin-Portfolio/) ile, yeteneklerimi, projelerimi inceleyebilir, iletişim kısmından benimle iletişime geçebilirsiniz.
 
 ## Kullanılan Teknolojiler
 
