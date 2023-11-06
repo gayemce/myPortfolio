@@ -139,4 +139,4 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home_arrow, .home_line, .home_shadow, .contact_mail`, {origin: 'right'})
 sr.reveal(`.home_name, .home_info, .section_title-1, .about_info, .about_shadow, .about_line, .about_box, .contact_social, .contact_data`, {origin: 'left'})
-sr.reveal(`.services_card, .projects_card`, {interval: 100})
+sr.reveal(`.skills_card, .projects_card`, {interval: 100})
