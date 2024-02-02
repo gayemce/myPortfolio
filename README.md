@@ -1,25 +1,25 @@
-# Portfolyo Sitesi
+# Portfolio Website
 
-Bu GitHub deposu, kişisel portfolyo web sitesi içerir. [Bu site](https://gayemce.github.io/myPortfolio/) ile, yeteneklerimi, projelerimi inceleyebilir, iletişim kısmından benimle iletişime geçebilirsiniz.
+This GitHub repository contains a personal portfolio website. [This site](https://gayemce.github.io/myPortfolio/) allows you to explore my skills, projects, and contact me through the contact section.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
-Bu proje, aşağıdaki teknolojileri kullanmaktadır:
+This project utilizes the following technologies:
 
-- **HTML:** Temel yapı ve içerik oluşturma.
-- **CSS:** Tasarım ve stil düzenlemeleri.
-- **JavaScript:** İnteraktif özelliklerin ve animasyonların eklenmesi.
-- **RemixIcons:** Sitedeki ikonları temin etmek için kullanıldı.
-- **ScrollReveal:** Kaydırma animasyonları için kullanıldı.
-- **Email.js:** İletişim formu için e-posta gönderimi sağladı.
+- **HTML:** Basic structure and content creation.
+- **CSS:** Design and style adjustments.
+- **JavaScript:** Addition of interactive features and animations.
+- **RemixIcons:** Used for sourcing icons on the site.
+- **ScrollReveal:** Employed for scroll animations.
+- **Email.js:** Facilitates email sending for the contact form.
 
-## Özellikler
+## Features
 
-Proje, özellikleri:
+The project boasts the following features:
 
-- **Responsive Tasarım:** Site, farklı ekran boyutlarına mükemmel bir şekilde uyum sağlar.
-- **Dark ve Light Mod:** Site teması özelleştirilebilir.
-- **İletişim Formu:** Email.js entegrasyonu sayesinde, hızlıca iletişim kurmak mümkün.
+- **Responsive Design:** The site adapts perfectly to various screen sizes.
+- **Dark and Light Mode:** The site theme is customizable.
+- **Contact Form:** Email.js integration allows for quick communication.
 
 ---
 
